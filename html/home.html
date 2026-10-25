@@ -4,10 +4,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>e-commerce site</title>
 </head>
 
 <body>
+  
+  <header class="site-header">
+    <nav class="main-nav" aria-label="main-nav">
+        <a href="home.html">
+          ShopEase
+        </a>
+        <a href="shop.html">
+          Shop
+        </a>
+        <a href="#categories">
+          Categories
+        </a>
+        <a href="about.html">
+          About
+        </a>
+        <a href="#Contact"></a>
+        
+        <form class="search" role="search">
+          <input type="search" placeholder="search">
+        </form>
+        <div class="header-actions">
+          <a href="wishlist" aria-label="wishlist">
+            <i class="fa-regular fa-heart">
+            </i>
+          </a>
+          <a href="cart.html" aria-label="cart">
+           <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <a href="login.html" aria-label="login">
+           <i class="fa-regular fa-user">
+           </i>
+          </a>
+        </div>
+    </nav>
+  </header>
+    
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="tagline">Better Products, Better Living
+          </p>
+          <h1 class="main-hero-text">
+            Your One Stop Shop
+            <br>
+            For <em class="main-hero-text-em">Everything</em>
+          </h1>
+          <p class="hero-text">
+            Discover amazing products, unbeatable prices and seemless shopping experience.
+          </p>
+          <a href="shop.html" class="btn btn-primary">Shop now</a>
+          <a href="#featured" class="btn btn-outline">Explore deals</a>
+        </div>
+        
+        <div class="hero-image" aria-label="hero-image">
+          <img src="/images/sneakers.jpg" alt="sneakers" width="200px" height="200px">
+        </div>
+      </section>
+      
+      <section class="perks">
+        <div class="perks"><h3>Free Shipping</h3><p>On orders above &#8358;50,000</p></div>
+        <div class="perks">
+          <h3>Secure Payments
+          </h3>
+          <p>100% secure checkout</p>
+          </div>
+        <div>
+          <h3>Easy Returns</h3>
+          <p>Hassle free 7-days returns
+          </p>
+        </div>
+        <div>
+          <h3>24/7 Support</h3>
+          <p>We are here to help</p>
+        </div>
+      </section>
+      
+     
+      <section class="categories" id="categories">
+        <div class="section-head">
+          <h2>Shop by category</h2>
+          <a href="shop.html">view all</a>
+        </div>
+        
+        <ul class="category-grid">
+          <li>
+           <a href="shop.html? category=shirts">
+             <img src="/images/white-t-shirt.jpg" alt="white t-shirt" width="200px" height="200px">
+             <h3>Shirts</h3>
+             <p>120+ products</p>
+           </a> 
+          </li>
+        </ul>
+      </section>
+      
+      <section class="featured" id="featured">
+        <div class="section-head">
+         <h2>Featured</h2>
+         <a href="shop.html">view all</a>
+        </div>
+        
+        <div class="featured-layout">
+          <ul class="featured-grid" id="featured-product">
+            <li class="product-card" data-id="1">
+              <button class="wishlist" aria-label="add to wish list">
+                <i class="fa-regular fa-heart"></button>
+              <a href="product.html?id=1">
+               <img src="/images/white-t-shirt" alt="t-shirt" />
+               <h3>White t-shirt</h3>
+              </a>
+              <p class="price">&#8358;15,000
+              </p>
+              <p class="rating" aria-label="4.5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9734;<span>(124)</span>
+              </p>
+              <button class="btn btn-primary add-to-cart"></button>
+            </li>
+            </ul>
+            <aside class="promo">
+              <p>Special offer</p>
+              <h3>Up to 50% off</h3>
+              <p>On selected products</p>
+            </aside>
+        </div>
+      </section>
+      
+    </main>
+    
+    <footer class="site-footer" id="contact">
+      <div class="footer-brand">
+        <a href="home.html" class="logo">ShopEase</a>
+        <p>Better products, Better living</p>
+      </div>
+      <nav class="footer-col" aria-label="quick links">
+        <h4>Quick links</h4>
+        <a href="home.html">Home</a>
+        <a href="shop">Shop</a>
+        <a href="shop.html#categories">Categories</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+      <nav class="footer-col" aria-label="customer service">
+        <h4>Customer service</h4>
+        <a href="#">Help center</a>
+        <a href="#">Shipping info</a>
+        <a href="#">Returns</a>
+        <a href="#">FAQS</a>
+      </nav>
+      
+      <div class="footer-col">
+        <h4>Follow us</h4>
+       <a href="#" aria-label="facebook">Facebook</a> 
+       <a href="#" aria-label="x">X</a>
+       <a href="#" aria-label="instagram">Instagram</a>
+       <a href="#" aria-label="tiktok">TikTok</a>
+      </div>
+      <p class="copyright">&copy; 2026 ShopEase</p>
+    </footer>
   
 </body>
 
