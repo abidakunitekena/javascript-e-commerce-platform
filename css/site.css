@@ -1,8 +1,40 @@
 body{
-  color: #000;
+  color: black;
   font-family: sans-serif;
+  margin: 0;
 }
 
-.site-logo {
-  
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+.site-header {
+  margin: 4px;
+  gap: 14px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+.search {
+  flex: 1 1 100%;
+}
+
+.search input {
+  border-radius: 25px;
+  width: 100%;
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
+}
+
+.main-links{
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: space-between;
+}
+
+.header-actions{
+  margin-left: auto;
 }
